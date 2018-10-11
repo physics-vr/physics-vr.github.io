@@ -1,1 +1,1 @@
-# physics-vr.github.io
+# Webpage for the VR Physics capstone project
