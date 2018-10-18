@@ -53,16 +53,24 @@ main {
         color: nth($siteColors, 1);
     }
 
-    #outTeam {
+    .bios {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 1rem;
-        
-        
+        grid-gap: $globalMargin;
     }
+
     .bio {
         max-width: 48rem;
-        text-align: justify;
+
+        h3 {
+            padding: 0rem 0rem .125rem 0rem;
+        }
+
+        .imageBioGroup {
+            display: grid;
+            grid-template-columns: min-content auto;
+            grid-gap: 1rem;
+        }
 
         img {
             width: 200px;

@@ -336,17 +336,29 @@ main h2 {
   color: #eb5160;
 }
 
-main #outTeam {
+main .bios {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-gap: 0.75rem;
 }
 
 main .bio {
   max-width: 48rem;
-  text-align: justify;
+}
+
+main .bio h3 {
+  padding: 0rem 0rem .125rem 0rem;
+}
+
+main .bio .imageBioGroup {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content auto;
+      grid-template-columns: -webkit-min-content auto;
+      grid-template-columns: min-content auto;
+  grid-gap: 1rem;
 }
 
 main .bio img {
