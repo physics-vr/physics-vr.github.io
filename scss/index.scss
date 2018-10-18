@@ -58,12 +58,15 @@ main {
         grid-template-columns: 1fr;
         grid-gap: 1rem;
         
-        .bio {
-    
-            img {
-                width: 200px;
-                height: auto;
-            }
+        
+    }
+    .bio {
+        max-width: 48rem;
+        text-align: justify;
+
+        img {
+            width: 200px;
+            height: auto;
         }
     }
     

@@ -344,7 +344,12 @@ main #outTeam {
   grid-gap: 1rem;
 }
 
-main #outTeam .bio img {
+main .bio {
+  max-width: 48rem;
+  text-align: justify;
+}
+
+main .bio img {
   width: 200px;
   height: auto;
 }
