@@ -1,0 +1,51 @@
+
+/*
+
+
+
+
+
+Contains the styling for the nav icon, because it's ugly
+*/
+header {
+  // toggle-variables
+  $ham-height: 0.15rem;
+  $ham-spacing: 0.3rem;
+  $ham-width: calc(1.48492424049 * (3 * #{$ham-height} + 2 * #{$ham-spacing}));
+  $ham-align: calc(#{$ham-height} + #{$ham-spacing});
+
+  .toggle {
+    grid-column: 1;
+
+    display: inline-block;
+    margin: 0.8rem 0.75rem 0.6rem 0rem;
+    // padding: 0.5rem 0.65rem;
+    cursor: pointer;
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: $ham-width;
+      height: $ham-height;
+      background-color: black;
+      margin: $ham-spacing 0;
+      transition: $slideTime;
+    }
+  }
+
+  .animate {
+    .bar1 {
+      -webkit-transform: translate(0rem, $ham-align) rotate(-45deg);
+      transform: translate(0rem, $ham-align) rotate(-45deg);
+    }
+
+    .bar2 {
+      opacity: 0;
+    }
+
+    .bar3 {
+      -webkit-transform: translate(0, calc(0rem - #{$ham-align})) rotate(45deg);
+      transform: translate(0, calc(0rem - #{$ham-align})) rotate(45deg);
+    }
+  }
+}

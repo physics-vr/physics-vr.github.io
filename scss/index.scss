@@ -1,0 +1,81 @@
+@import "reset";
+@import "rebuild";
+
+
+@import url("https://fonts.googleapis.com/css?family=Cantarell|Slabo+27px");
+
+$sans-serif-fonts: "Cantarell", "Helvetica", "sans-serif";
+$serif-fonts: "Slabo 27px", "Helvetica", "Cambria", "serif";
+$pure: #5fa55a #fa5457 #fa8925 #f6d51f #8f39ac #01b4bc;
+$qppColors: #ec1342 #fa851e #ffdc14 #569451 #457ddf #8f39ac;
+$physicsColors: #eb5160 #f2f2f2;
+
+$siteColors: $physicsColors;
+$slideTime: 0.4s;
+
+$globalMargin: .75rem;
+
+html,  
+body {  
+    font-size: 16px;
+    overflow-x: hidden;
+    font-family: $serif-fonts;
+
+    width: 100vw; 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto min-content;
+}
+
+@import 'default_fixed_header'; 
+
+main {
+    // Section level styling
+    .contentContainer {
+        padding: $globalMargin;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: $globalMargin;
+
+        line-height: 1.3;
+
+        section > p {
+            margin-left: 1rem;
+        }
+    }
+
+    // Content level styling
+    h2 {
+        color: nth($siteColors, 1);
+    }
+
+    #outTeam {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        
+        .bio {
+    
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
+    
+} 
+
+footer {
+    // Section level styling
+    background-color: nth($siteColors,1);
+    align-self: end;
+
+    // Content level styling
+    h2 {
+        padding: 1rem;
+    }
+}

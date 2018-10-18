@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Webpage Title</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="title">
+            <span class="primaryName">RockIT</span>
+            <span class="secondaryName">Physics</span>
+        </div>
+        <div><a class="toggle" onclick="buttonChange(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a></div>
+        <nav id="navigation">
+            <a class="siteLink" href="#mission"> Mission</a>
+            <a class="siteLink" href="#team"> Team</a>
+            <a class="siteLink" href="#updates"> Updates</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class=contentContainer>
+            <section id="mission">
+                <h2> Mission</h2>
+                <p>To create a playful environment for learning physics fundamentals</p>
+                
+            </section>
+
+            <section id="team">
+                <h2> Team</h2>
+                <section class="bio" id="teammate-1">
+                    <h3>Candice Miao</h3>
+                    <!-- <img src="./assets/placeholder.png" alt="Photo of Candice"> -->
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur eveniet dicta optio hic. Repellendus fuga placeat quae quaerat iure illum magnam est asperiores, velit, eius illo dolorem a. Fugit excepturi iure sint blanditiis distinctio eos, repellat magnam maiores eius nostrum?</p>
+                </section>
+                <section class="bio" id="teammate-2">
+                    <h3>Jeff Xu</h3>
+                    <!-- <img src="./assets/placeholder.png" alt="Photo of Jeff"> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illo autem vel modi beatae nemo quo voluptas, sint veniam natus rem magnam voluptatum nihil ullam accusantium alias excepturi earum minus laudantium facere iusto inventore vero. Odit impedit odio pariatur nobis doloribus magni excepturi repudiandae fugiat corrupti hic consequatur facilis, ipsam aliquid sint tempora laborum obcaecati adipisci atque saepe? In, rerum.</p>
+                </section>
+                <section class="bio" id="teammate-3">
+                    <h3>Phoenix Meadowlark</h3>
+                    <!-- <img src="./assets/placeholder.png" alt="Photo of Phoenix"> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam impedit delectus accusamus, placeat velit ratione saepe aliquam, nobis reiciendis illo veritatis eveniet laborum laudantium nulla architecto aperiam deserunt a fuga.</p>
+                </section>
+                <section class="bio" id="teammate-4">
+                    <h3>Ryan Smith</h3>
+                    <!-- <img src="./assets/placeholder.png" alt="Photo of Ryan"> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id adipisci cupiditate nemo optio pariatur voluptates sapiente, qui eum. Asperiores, delectus totam placeat molestiae neque dolores quos consequuntur dicta mollitia perferendis dolor voluptate natus nihil vel rerum quo autem sit minus a in perspiciatis sapiente. Nostrum magni voluptates nulla quae.</p>
+                </section>
+            </section>
+
+            <section id="updates">
+                <h2>Updates</h2>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <h2>This is the foot of the site</h2>
+    </footer>
+
+
+
+
+    <script type="text/javascript">
+        $('.toggle').on("click", function () {
+            $('#navigation').toggleClass('expand');
+            $('#header').toggleClass('top-bar-row');
+
+        });
+    </script>
+    <script>
+        function buttonChange(x) {
+            x.classList.toggle("animate");
+        }
+    </script>
+    <script>
+        var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+        var headerHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("main").style.marginTop = headerHeight + 'px';
+
+        var footerHeight = document.getElementById("footer").offsetHeight;
+        var initialMainHeight = document.getElementById('main').offsetHeight;
+        var filledHeight = (vh - headerHeight - footerHeight);
+
+
+        var mainHeight = Math.max(filledHeight, initialMainHeight) + 'px';
+        document.getElementById("main").style.height = mainHeight;
+    </script>
+</body>
+
+</html>

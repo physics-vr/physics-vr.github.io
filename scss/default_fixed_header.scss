@@ -1,0 +1,58 @@
+header {
+    position: fixed;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: auto min-content; // set for name and toggle respectively
+    grid-template-rows: auto;
+
+    background-color: #fafafa;
+    box-shadow: 0.1rem 0.1rem 1rem #b8b8b8;
+
+    .title {
+        grid-column: 1;
+        align-self: center;
+        padding: 0.5rem 0rem 0.5rem $globalMargin;
+
+        font-family: $serif-fonts;
+        font-size: 2rem;
+
+        .primaryName {
+            color: nth($siteColors, 1);
+        }
+    }
+
+
+    nav {
+        // Transition Controls
+        max-height: 0;
+        transition: max-height $slideTime ease-out;
+        overflow: hidden;
+
+        // Display Settings
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+        .siteLink {  
+            padding: $globalMargin;
+
+            &:hover {
+                color: #555;
+            }
+        }
+    }
+
+    // Navigation toggle controls
+    .expand {
+        max-height: 500px;
+        transition: max-height $slideTime ease-in;
+    }
+}
+
+@import 'button'; 
+@import 'nav_media_queries';
