@@ -32,6 +32,7 @@
     <main id="main">
         <div class=contentContainer>
             <section id="mission">
+
                 <h2> Mission</h2>
                 <p>To improve student learning through interactive, visual physics education.</p>
 
@@ -86,10 +87,9 @@
         </div>
     </main>
 
-    <div style="padding: 10rem 0rem;"></div>
-
     <footer id="footer">
-        <h2>This is the foot of the site</h2>
+        <h2>RockIT Physics</h2>
+        <h3>In association with UW CSE and the UW Physics Education Group</h3>
     </footer>
 
 
@@ -110,22 +110,29 @@
     </script>
 
     <script>
-        var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+        function padBody () {
+            document.getElementById("main").style.height = 'auto';
+            var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
 
-        var headerHeight = document.getElementById("header").offsetHeight;
-        document.getElementById("main").style.marginTop = headerHeight + 'px';
+            var headerHeight = document.getElementById("header").offsetHeight;
+            document.getElementById("main").style.marginTop = headerHeight + 'px';
 
-        var footerHeight = document.getElementById("footer").offsetHeight;
-        var initialMainHeight = document.getElementById('main').offsetHeight;
-
-
-        var filledHeight = (vh - headerHeight - footerHeight);
+            var footerHeight = document.getElementById("footer").offsetHeight;
+            var initialMainHeight = document.getElementById('main').offsetHeight;
 
 
-        var mainHeight = Math.max(filledHeight, initialMainHeight) + 'px';
-        document.getElementById("main").style.height = mainHeight;
+            var filledHeight = (vh - headerHeight - footerHeight);
+
+
+            var mainHeight = Math.max(filledHeight, initialMainHeight) + 'px';
+            document.getElementById("main").style.height = mainHeight;
+        }
+
+        padBody();
+        window.addEventListener('resize', padBody);
     </script>
 </body>
 

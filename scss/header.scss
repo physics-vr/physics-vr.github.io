@@ -38,7 +38,7 @@ header {
         font-weight: bold;
         font-size: 1.2rem;
 
-        .siteLink {  
+        .siteLink {
             padding: $globalMargin;
 
             &:hover {
@@ -54,5 +54,5 @@ header {
     }
 }
 
-@import 'button'; 
+@import 'button';
 @import 'nav_media_queries';

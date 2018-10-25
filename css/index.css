@@ -339,8 +339,8 @@ main h2 {
 main .bios {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
   grid-gap: 0.75rem;
 }
 
@@ -355,9 +355,8 @@ main .bio h3 {
 main .bio .imageBioGroup {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: min-content auto;
-      grid-template-columns: -webkit-min-content auto;
-      grid-template-columns: min-content auto;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
 
@@ -371,9 +370,11 @@ footer {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  padding: 2rem 0rem;
 }
 
-footer h2 {
-  padding: 1rem;
+footer h2,
+footer h3 {
+  padding: .5rem;
 }
 /*# sourceMappingURL=index.css.map */

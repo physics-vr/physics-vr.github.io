@@ -1,0 +1,13 @@
+
+footer {
+    // Section level styling
+    background-color: nth($siteColors,1);
+    align-self: end;
+    padding: 2rem 0rem;
+
+    // Content level styling
+    h2, 
+    h3 {
+        padding: .5rem;
+    }
+}

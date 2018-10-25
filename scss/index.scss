@@ -12,7 +12,7 @@ $physicsColors: #eb5160 #f2f2f2;
 
 $siteColors: $physicsColors;
 $slideTime: 0.4s;
-
+ 
 $globalMargin: .75rem;
 
 html,  
@@ -30,63 +30,8 @@ body {
     grid-template-rows: min-content auto min-content;
 }
 
-@import 'default_fixed_header'; 
+@import 'header'; 
+@import 'main';
+@import 'footer';
 
-main {
-    // Section level styling
-    .contentContainer {
-        padding: $globalMargin;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: $globalMargin;
-
-        line-height: 1.3;
-
-        section > p {
-            margin-left: 1rem;
-        }
-    }
-
-    // Content level styling
-    h2 {
-        color: nth($siteColors, 1);
-    }
-
-    .bios {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: $globalMargin;
-    }
-
-    .bio {
-        max-width: 48rem;
-
-        h3 {
-            padding: 0rem 0rem .125rem 0rem;
-        }
-
-        .imageBioGroup {
-            display: grid;
-            grid-template-columns: min-content auto;
-            grid-gap: 1rem;
-        }
-
-        img {
-            width: 200px;
-            height: 200px;
-        }
-    }
-    
-} 
-
-footer {
-    // Section level styling
-    background-color: nth($siteColors,1);
-    align-self: end;
-
-    // Content level styling
-    h2 {
-        padding: 1rem;
-    }
-}
+ 
