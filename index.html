@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>Webpage Title</title>
+    <title>RockIT Physics</title>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
         <div class=contentContainer>
             <section id="mission">
                 <h2> Mission</h2>
-                <p>To create a playful environment for learning physics fundamentals</p>
+                <p>To improve student learning through interactive, visual physics education.</p>
 
             </section>
 
@@ -44,7 +44,7 @@
                         <h3>Candice Miao</h3>
 
                         <div class="imageBioGroup">
-                            <img src="./assets/candice_headshot.jpg" alt="Photo of Candice">
+                            <img src="./assets/candice_headshot_sq.png" alt="Photo of Candice">
 
                             <p>Candice is a senior majoring in Computer Science and minoring in Applied Mathematics. She is passionate about product management and software engineering.</p>
                         </div>
@@ -53,7 +53,7 @@
                     <section class="bio" id="teammate-2">
                         <h3>Jeff Xu</h3>
                         <div class="imageBioGroup">
-                            <img src="./assets/jeff.jpg" alt="Photo of Jeff">
+                            <img src="./assets/jeff_headshot_sq.jpg" alt="Photo of Jeff">
 
                             <p>Jeff is studying Computer Science at the University of Washington in Seattle, WA</p>
                         </div>
@@ -62,7 +62,7 @@
                     <section class="bio" id="teammate-3">
                         <h3>Phoenix Meadowlark</h3>
                         <div class="imageBioGroup">
-                                <img src="./assets/phoenix.jpg" alt="Photo of Phoenix">
+                                <img src="./assets/phoenix_headshot_sq.png" alt="Photo of Phoenix">
     
                                 <p>Phoenix is an undergraduate studying Computer Science and Philosophy, and a Neuroethics Researcher with the Center for Neurotechnology at the University of Washington. </p>
                             </div>
@@ -70,7 +70,7 @@
                     <section class="bio" id="teammate-4">
                         <h3>Ryan Matthew Smith</h3>
                         <div class="imageBioGroup">
-                            <img src="./assets/ryansmith.jpg" alt="Photo of Ryan">
+                            <img src="./assets/ryan_headshot_sq.jpg" alt="Photo of Ryan">
                                 <div>
                                     <p>Ryan is a software engineer, photographer, and entreprenuer.  He is currently a Software Design Engineer at PicoBrew and pursuing a degree in Computer Engineering from University of Washington. He is also known as the photographer of Modernist Cuisine and co-founder of ChefSteps.</p>
                               </div>
@@ -86,11 +86,12 @@
         </div>
     </main>
 
-    <!-- <footer id="footer">
-        <h2>This is the foot of the site</h2>
-    </footer> -->
-
     <div style="padding: 10rem 0rem;"></div>
+
+    <footer id="footer">
+        <h2>This is the foot of the site</h2>
+    </footer>
+
 
 
 
@@ -107,15 +108,19 @@
             x.classList.toggle("animate");
         }
     </script>
+
     <script>
         var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
         var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
 
         var headerHeight = document.getElementById("header").offsetHeight;
         document.getElementById("main").style.marginTop = headerHeight + 'px';
 
         var footerHeight = document.getElementById("footer").offsetHeight;
         var initialMainHeight = document.getElementById('main').offsetHeight;
+
+
         var filledHeight = (vh - headerHeight - footerHeight);
 
 

@@ -363,7 +363,7 @@ main .bio .imageBioGroup {
 
 main .bio img {
   width: 200px;
-  height: auto;
+  height: 200px;
 }
 
 footer {
