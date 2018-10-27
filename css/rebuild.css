@@ -21,4 +21,14 @@ h5 {
 h6 {
   font-size: 1.0rem;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: .25rem;
+}
 /*# sourceMappingURL=rebuild.css.map */

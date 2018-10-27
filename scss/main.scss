@@ -22,7 +22,7 @@ main {
 
     .bios {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: $globalMargin;
     }
 
@@ -35,13 +35,14 @@ main {
 
         .imageBioGroup {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: min-content auto;
             grid-gap: 1rem;
         }
 
         img {
-            width: 200px;
-            height: 200px;
+            $imageSize: 160px;
+            width: $imageSize;
+            height: $imageSize;
         }
     }
     

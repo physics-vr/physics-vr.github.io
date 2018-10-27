@@ -63,10 +63,10 @@
                     <section class="bio" id="teammate-3">
                         <h3>Phoenix Meadowlark</h3>
                         <div class="imageBioGroup">
-                                <img src="./assets/phoenix_headshot_sq.png" alt="Photo of Phoenix">
+                            <img src="./assets/phoenix_headshot_sq.png" alt="Photo of Phoenix">
     
-                                <p>Phoenix is an undergraduate studying Computer Science and Philosophy, and a Neuroethics Researcher with the Center for Neurotechnology at the University of Washington. </p>
-                            </div>
+                            <p>Phoenix is an undergraduate studying Computer Science and Philosophy, and a Neuroethics Researcher with the Center for Neurotechnology at the University of Washington. </p>
+                        </div>
                     </section>
                     <section class="bio" id="teammate-4">
                         <h3>Ryan Matthew Smith</h3>
@@ -82,7 +82,25 @@
 
             <section id="updates">
                 <h2>Updates</h2>
-                <a href="./images/PRD.pdf">Project Requirements Document</a>
+
+                <section class="update">
+                    <h3>Blog - 10/26/2018</h3>
+                    <p>This week we created a basic demo revolving around gravitational potential energy and conversion to kinetic energy.  The user is placed in a room with a switch, hovering a hand on the switch activates a falling block demo paired with a real-time text display updating vertical velocity, gravitational potential energy, and vertical kinetic energy.  The user can reset the demo and rewatch.  Although this basic demo is mechanics related and we are going to be moving forward with working with the physics department on a EM demo, we learned valuable skills in Unity, C#, and using the SteamVR api's.</p>
+                    <p>These skills include event handling from a SteamVR Interactable object, working with Unity's built in Physics engine and Rigidbody classes, working with and updating UiText objects in Unity, and basic C# scripting to manipulate GameObjects and handle Unity Events.</p>
+                    <p>Aditya facilitated a meeting with the Physics Education Group at the University of Washington this week, and we have shifted our focus from creating high school education materials to creating materials to integrate into their electrodynamics tutorial program. We are excited to be collaborating with a group who has such deep domain expertise.</p>
+                    <h4>Displaying difficult to visualize properties through trailing and dynamic graphics</h4>
+                    
+                    <img src="./assets/wheels.jpg" alt="Cycloid Graphic" style="width:100%; height:300px">
+                    <img src="./assets/graphs.jpg" alt="Physical Systems to Equations" style="width:100%; height: 500px">
+                </section>
+
+                <section class="update">
+                    <h3>Project Requirements Document</h3>
+                    <p>The documentation for our project can be viewed <a href="./images/PRD.pdf" style="color:darkcyan">here</a>.</p>
+                </section>
+
+
+                
             </section>
         </div>
     </main>
@@ -113,21 +131,21 @@
 
         function padBody () {
             document.getElementById("main").style.height = 'auto';
-            var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-            var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+            let vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            let vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
 
-            var headerHeight = document.getElementById("header").offsetHeight;
+            let headerHeight = document.getElementById("header").offsetHeight;
             document.getElementById("main").style.marginTop = headerHeight + 'px';
 
-            var footerHeight = document.getElementById("footer").offsetHeight;
-            var initialMainHeight = document.getElementById('main').offsetHeight;
+            let footerHeight = document.getElementById("footer").offsetHeight;
+            let initialMainHeight = document.getElementById('main').offsetHeight;
 
 
-            var filledHeight = (vh - headerHeight - footerHeight);
+            let filledHeight = (vh - headerHeight - footerHeight);
 
 
-            var mainHeight = Math.max(filledHeight, initialMainHeight) + 'px';
+            let mainHeight = Math.max(filledHeight, initialMainHeight) + 'px';
             document.getElementById("main").style.height = mainHeight;
         }
 

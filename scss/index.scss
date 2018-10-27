@@ -1,7 +1,6 @@
 @import "reset";
 @import "rebuild";
 
-
 @import url("https://fonts.googleapis.com/css?family=Cantarell|Slabo+27px");
 
 $sans-serif-fonts: "Cantarell", "Helvetica", "sans-serif";
@@ -12,16 +11,16 @@ $physicsColors: #eb5160 #f2f2f2;
 
 $siteColors: $physicsColors;
 $slideTime: 0.4s;
- 
+  
 $globalMargin: .75rem;
 
 html,  
-body {  
+body {
     font-size: 16px;
     overflow-x: hidden;
     font-family: $serif-fonts;
 
-    width: 100vw; 
+    width: 100vw;  
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -33,5 +32,6 @@ body {
 @import 'header'; 
 @import 'main';
 @import 'footer';
+@import 'mainMediaQueries';
 
  
