@@ -165,6 +165,11 @@ h6 {
   font-size: 1.0rem;
 }
 
+li {
+  margin-left:40px;
+  list-style-type:circle;
+}
+
 h1,
 h2,
 h3,
@@ -316,9 +321,9 @@ header .animate .bar3 {
     visibility: visible;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (max-content)[3];
-        grid-template-columns: repeat(3, -webkit-max-content);
-        grid-template-columns: repeat(3, max-content);
+    -ms-grid-columns: (max-content)[4];
+        grid-template-columns: repeat(4, -webkit-max-content);
+        grid-template-columns: repeat(4, max-content);
     grid-gap: 1rem;
   }
   header nav .siteLink {

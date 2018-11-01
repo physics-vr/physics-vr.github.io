@@ -26,6 +26,7 @@
             <a class="siteLink" href="#mission"> Mission</a>
             <a class="siteLink" href="#team"> Team</a>
             <a class="siteLink" href="#updates"> Updates</a>
+            <a class="siteLink" href="#PRD"> PRD</a>
         </nav>
     </header>
 
@@ -84,17 +85,74 @@
                 <h2>Updates</h2>
 
                 <section class="update">
-                    <h3>Blog - 10/26/2018</h3>
+                   <h3 style="padding-top:7px">Blog - 11/1/2018</h3>
+                    <p>
+                       This week out team met with Jared Canright and Suzanne White Bramhia.  We have decided to&nbsp; 
+                       work towards a statics demo for the honors Electromagnetism honors 122 class in winter.&nbsp; 
+                       Jared has a working EM demo with magentic field vectors visualized on negative and positive&nbsp; 
+                       charges which the user can place and move. 
+                    </p>
+
+                    <p>
+                       Our team will be assisting Jared build out features for his project: Physics Not Included, and&nbsp; 
+                       will be working the project into a Statics demo for next quarter.  This week we will be&nbsp;
+                       beginning to work with Physics Not Included.  Since this was built for Oculus and Vive&nbsp; 
+                       controllers, we will first need to figure out building and controller event handling&nbsp; 
+                       across these two platforms.&nbsp;
+                    </p>
+                    
+                    <h4>Current goals from Jared:</h4>
+                    <ul>
+                    <li>Improved UI/UX with RayCasting</li>
+                    <li>Networking Capability, multidevices in a single scene</li>
+                    <li>Unit Testing to confirm physics calculations</li>
+                    <li>Allow Session Recording</li>
+                    <li>Build in TA Interaction</li>
+                    </ul>
+
+                    <h4>Work Completed this week</h4>
+                    <p>
+                      Ryan - I worked on learning controller input in Unity through Unity.Input API, and am currently&nbsp;
+                      using that in the Gravitational Potential Energy Demo to setup, reset, and play the demo.  I was&nbsp; 
+                      in attendance for the meeting with Jared and Suzanne to discuss potential useful demos and got&nbsp; 
+                      to demo Jared's current work on the Oculus.  Also worked on the blog and updated the PRD to&nbsp; 
+                      reflect current progress and outlook.  This week I will be investigating networking with VR&nbsp;
+                      VR Applications, playing with RayCasting, and working with building Jared's project and&nbsp;
+                      accepting input with the WMR and Motion Controllers.
+                    </p>
+                    <p>
+                      Jeff -
+                    </p>
+                    <p>
+                      Candice -
+                    </p>
+                    <p>
+                      Unfortunately, Phoenix is out this week with a serious health matter
+                    </p>
+
+                    <h4>Setting and Releasing Block - Gravitational Potential Energy Demo</h4>
+                    <img src="./assets/Blog/2018_11_1/KE_GPE_1.png" alt="GPE_Setup" style="width:100;max-width:600px">
+                    <img src="./assets/Blog/2018_11_1/KE_GPE_2.png" alt="GPE_Release" style="width:100%;max-width:600px">
+
+                    <h4>Physics Not Included - Jared Canright</h4>
+                    <!-- 
+                    <img src="./assets/Blog/2018_11_1/KE_GPE_1.png" alt="GPE_Setup" style="width:100;max-width:600px">
+                    <img src="./assets/Blog/2018_11_1/KE_GPE_2.png" alt="GPE_Release" style="width:100%;max-width:600px">
+                    -->
+                </section>
+                
+                <section class="update">
+                    <h3 style="padding-top:7px">Blog - 10/26/2018</h3>
                     <p>This week we created a basic demo revolving around gravitational potential energy and conversion to kinetic energy.  The user is placed in a room with a switch, hovering a hand on the switch activates a falling block demo paired with a real-time text display updating vertical velocity, gravitational potential energy, and vertical kinetic energy.  The user can reset the demo and rewatch.  Although this basic demo is mechanics related and we are going to be moving forward with working with the physics department on a EM demo, we learned valuable skills in Unity, C#, and using the SteamVR api's.</p>
                     <p>These skills include event handling from a SteamVR Interactable object, working with Unity's built in Physics engine and Rigidbody classes, working with and updating UiText objects in Unity, and basic C# scripting to manipulate GameObjects and handle Unity Events.</p>
                     <p>Aditya facilitated a meeting with the Physics Education Group at the University of Washington this week, and we have shifted our focus from creating high school education materials to creating materials to integrate into their electrodynamics tutorial program. We are excited to be collaborating with a group who has such deep domain expertise.</p>
-                    <h4>Displaying difficult to visualize properties through trailing and dynamic graphics</h4>
+                    <h4 style="padding-top:7px">Displaying difficult to visualize properties through trailing and dynamic graphics</h4>
                     
                     <img src="./assets/wheels.jpg" alt="Cycloid Graphic" style="width:100%; height:300px">
                     <img src="./assets/graphs.jpg" alt="Physical Systems to Equations" style="width:100%; height: 500px">
                 </section>
 
-                <section class="update">
+                <section class="update" id="PRD">
                     <h3>Project Requirements Document</h3>
                     <p>The documentation for our project can be viewed <a href="./images/PRD.pdf" style="color:darkcyan">here</a>.</p>
                 </section>

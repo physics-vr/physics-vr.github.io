@@ -11,10 +11,10 @@ main {
         line-height: 1.3;
 
         section > p {
+            margin-top: 20px;
             margin-left: 1rem;
         }
     }
-
     // Content level styling
     h2 {
         color: nth($siteColors, 1);

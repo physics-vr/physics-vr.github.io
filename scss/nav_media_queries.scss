@@ -21,8 +21,8 @@
             visibility: visible;
 
             display: grid;
-            grid-template-columns: repeat(3, max-content);
-            grid-gap: 1rem;
+            grid-template-columns: repeat(4, max-content);
+            grid-gap: .5rem;
 
             //   justify-items: end;
             .siteLink {
