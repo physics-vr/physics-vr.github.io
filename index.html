@@ -39,9 +39,51 @@
 
             </section>
 
-
             <section id="updates">
                 <h2>Updates</h2>
+
+                <section class="update">
+                   <h3 style="padding-top:14px">Blog - 11/29/2018</h3>
+                    <p>
+                       &emsp;
+                       Since last update we have focused on adding user functionality and improving user experience.&nbsp;
+                       Charges now scale with intensity of charge and have different colors for polarity.  We have&nbsp;
+                       added a distance interaction tool that greatly improves the users ability to interact with&nbsp;
+                       the scene.  The tool is active when the left trigger is held and allows the user to move&nbsp;
+                       charges in the distance around the scene, allows moving charges away or toward the user,&nbsp;
+                       and also allows the deleting of charges.  This significantly improves the users ability&nbsp;
+                       to use the entire scene area and also see real time effects of moving charges in space&nbsp;
+                       </br></br>&emsp;
+                       This week we will focus on improving visualization and fixing any repeatable bugs.&nbsp;
+                       We plan to work more with styling the vectors to make the scene more consistent and&nbsp;
+                       less cluttered.  We also will be adding a feature to the distance interaction tool that&nbsp;
+                       will allow the user to view an electric field line from a point on a charge they point to.&nbsp;
+                       A stretch goal will be to add subtle animation to the field line and vectors to improve&nbsp;
+                       the feeling of direction.
+                    </p>
+                    <h3 style="padding-top:7px">Check out a recording showing new interactions here:</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/myYWNZC-AnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4>Current goals for next week</h4>
+                    <ul>
+                    <li>Improve vector visuals</li>
+                    <li>Find and fix repeatable bugs</li>
+                    <li>Electric field line from a point source</li>
+                    <li>Stretch: add animation</li>
+                    </ul>
+
+                    <h4>Work Completed</h4>
+                    <p>
+                    <strong>Ryan</strong> - I added changing color support to the charge prefabs to denote polarity with color,&nbsp; 
+                      and a feature to scale charges with charge level.  I also designed and implemented a laser pointer&nbsp;
+                      that I needed for RayCasting interaction with the charges.  I then used this to build a new user tool,&nbsp;
+                      Distance Interaction Tool.  When active (Active with a user holding left trigger) the user can point&nbsp;
+                      a laser at charges in the scene to interact with the charges.  This allows moving the charges in 3D,&nbsp;
+                      moving the charges towards and away from user position, and deleting charges from the scene.
+                      </br></br>
+                      On the administrative side, I recorded a video highlighting the interaction update, drafted the demo&nbsp;
+                      plan, and wrote this post.
+                    </p>
+                </section>
 
                 <section class="update">
                    <h3 style="padding-top:14px">Blog - 11/15/2018</h3>
@@ -103,7 +145,6 @@
                     <img src="./assets/Blog/2018_11_8/6.jpg" alt="3D Electric Field" style="width:100%;max-width:800px">
                     <img src="./assets/Blog/2018_11_8/4.jpg" alt="3D Electric Field" style="width:100%;max-width:800px">
                 </section>
-
                 <section class="update">
                    <h3 style="padding-top:14px">Blog - 11/1/2018</h3>
                     <p>
@@ -220,7 +261,7 @@
                         <div class="imageBioGroup">
                             <img src="./assets/ryan_headshot_sq.jpg" alt="Photo of Ryan">
                                 <div>
-                                    <p>Ryan is a software engineer, photographer, and entreprenuer.  He is currently a Software Design Engineer at PicoBrew and pursuing a degree in Computer Engineering from University of Washington. He is also known as the photographer of Modernist Cuisine and co-founder of ChefSteps.</p>
+                                    <p>Ryan is a software engineer, photographer, and entreprenuer.  He is currently a Software Engineer at PicoBrew and pursuing a degree in Computer Engineering from University of Washington. He is also known as the photographer of Modernist Cuisine and co-founder of ChefSteps.</p>
                               </div>
                             </div>
                     </section>
@@ -252,7 +293,6 @@
         }
     </script>
 
-    <!--
     <script>
 
         function padBody () {
@@ -278,7 +318,6 @@
         padBody();
         window.addEventListener('resize', padBody);
     </script>
-    -->
 </body>
 
 </html>
