@@ -35,4 +35,7 @@ body {
 @import 'footer';
 @import 'mainMediaQueries';
 
- 
+.fatality {
+    opacity: .3;
+    filter: grayscale(80%);
+}
